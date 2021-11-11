@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+}
+ 
+.satu {
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dua {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+.tiga {
+  width: 50px;
+  height: 50px;
+  background-color: violet;
+}
+
+/* 
+
+OVERLAPING MARGIN 
+
+Kita tidak bisa menambahkan margin secara vertikal
+
+contoh: 
+
+.satu {
+  margin-bottom: 150px;
+}
+
+.dua {
+  margin-top: 50px;
+}
+
+margin akan tetap 150px
+
+*/
+
+/* 
+NEGATIVE MARGIN
+
+Kita bisa menggunakan negative pada margin
+
+contoh: 
+
+div {
+  margin-left: -100px;
+}
+
+*/
+
+/* 
+AUTO
+
+Kita bisa menggunakan auto untuk margin-right dan margin-left saja
+*/

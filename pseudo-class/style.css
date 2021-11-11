@@ -1,0 +1,56 @@
+.hello:link {
+  color: orange;
+}
+
+.hello:hover {
+  font-family: arial;
+  font-size: 30px;
+  color: green;
+}
+
+.hello:active {
+  font-style: italic;
+}
+
+.hello:visited {
+  color: red;
+}
+
+li:first-child a {
+  color: olive;
+}
+
+li:last-child a {
+  color: brown;
+}
+
+li:nth-child(4) {
+  font-family: arial;
+}
+
+/* memulai keliapatan dua dari index ke 1 */
+li:nth-child(2n-1) {
+  font-size: 30px;
+}
+
+li:nth-child(3n+1) a {
+  color: cadetblue;
+}
+
+/* Kita bisa menggaunakan "event" untuk genap di nth child dan "odd" untuk ganjil */
+li:nth-child(odd) a {
+  color: crimson;
+}
+
+li:nth-child(odd) a:hover {
+  color: #fff ;
+}
+
+/* Kita tidak bisa menggunakan first-child, nth-child atau last-child pada element yang tidak memiliki parent */
+
+/* tapi kita bisa menggunakan first-of-type atau last-of-type */
+p:first-of-type {
+  color: red;
+}
+
+/* Kita bisa menggunakan color: inherit; pada <a> agar <a> bisa mendapatkan warna pada parentnya */

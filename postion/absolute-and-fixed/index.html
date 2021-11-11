@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float</title>
+</head>
+<style>
+  div {
+    width: 100px;
+    height: 100px;
+  }
+
+  .satu {
+    background-color: cyan;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .dua {
+    background-color: salmon;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .tiga {
+    background-color: yellow;
+  }
+
+  .container {
+    width: 600px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 4px;
+    border: 1px solid black;
+    /* Position must be "relative" because child element is using absolute */
+    position: relative; 
+  }
+</style>
+<body>
+
+  <!-- Ketika kita menggerakan posisi dengan absolute, ruang yang ditempati oleh element tsb tidak ada -->
+  <!-- 
+    Ketika kita menggerkan dengan posisi absolute, elemen akan bergerak relatif terhadap dari posisi parentnya.
+    
+    Notes: Parentnya harus non-static
+  -->
+
+  <!-- Position tidak akan memperdulikan jika element parentnya non static -->
+
+  <div class="container">
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+  </div>
+  
+</body>
+</html>
